@@ -10,8 +10,7 @@ from cachetools import TTLCache
 
 from asilo_getter import get_asylum_options, get_full_information
 
-# token = os.getenv("ASILO_BOT")
-token = "6406642653:AAFtb-5TkIE4eZRc1tNn1bS7rxeqY2ISwNM"
+token = os.getenv("ASILO_BOT")
 dp = Dispatcher()
 
 cache = TTLCache(maxsize=262144, ttl=60)
