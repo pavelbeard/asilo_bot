@@ -7,4 +7,4 @@ services:
       dockerfile: Dockerfile
     env_file:
       - environments.env
-    command: ["python", "bot.py"]
+    command: ["python", "/app/bot.py"]
