@@ -36,7 +36,7 @@ def create_lvl1_kb():
     inline_kb = types.InlineKeyboardMarkup(
         inline_keyboard=[[
             types.InlineKeyboardButton(text="Список провинций", callback_data="provinces"),
-            types.InlineKeyboardButton(text="Задонатить на чай", pay=True),
+            # types.InlineKeyboardButton(text="Задонатить на чай", pay=True),
         ]]
     )
     return inline_kb
