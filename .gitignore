@@ -5,3 +5,4 @@ asilo.php
 .idea
 venvAsilo
 *.env
+__pycache__
