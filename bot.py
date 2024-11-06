@@ -116,7 +116,6 @@ async def list_of_provinces(callback_query: types.CallbackQuery):
                     ])
                 )
 
-
 # @dp.pre_checkout_query()
 # async def pre_checkout_query_handler(pre_checkout: types.PreCheckoutQuery):
 #     await dp.pre_checkout_query(pre_checkout.id, ok=True)
