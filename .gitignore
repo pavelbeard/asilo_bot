@@ -4,5 +4,6 @@ asilo.php
 *.iml
 .idea
 venvAsilo
-*.env
-__pycache__
+*venv
+*env
+*__pycache__

@@ -51,10 +51,13 @@ def get_full_information(options: BeautifulSoup):
                     str(tr.find_all("td")[0].text).lower().strip().replace(" ", "_"): check_a_tags(tr)
                 })
                 province = tr.find("th").text
-            except AttributeError:
-                options.update({
-                    str(tr.find_all("td")[0].text).lower().strip().replace(" ", "_"): check_a_tags(tr)
-                })
+            except Exception:
+                all_td = tr.find_all("td")
+                
+                if len(all_td) > 0:        
+                    options.update({
+                        str(tr.find_all("td")[0].text).lower().strip().replace(" ", "_"): check_a_tags(tr)
+                    })
 
             province_list.append({
                 "province": province,
